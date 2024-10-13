@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <header>
+        <img src="../img/menu.svg" class="menu" alt="" onclick="openClose()">
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="family.html">Family</a>
+                </li>
+                <li>
+                    <a href="education.html">Education</a>
+                </li>
+                <li>
+                    <a href="hobbies.html">Hobbies</a>
+                </li>
+                <li>
+                    <a class="selected-page" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <!-- Main container for the contact section -->
+            <h1>Contact Us</h1> <!-- Heading for the contact section -->
+        
+            <form>
+                <!-- Contact form for user input -->
+                <label for="name">Name:</label> <!-- Label for the name input field -->
+                <input type="text" id="name" name="name" required> <!-- Text input for user name; required for form submission -->
+        
+                <label for="email">Email:</label> <!-- Label for the email input field -->
+                <input type="email" id="email" name="email" required> <!-- Email input for user email; required for form submission -->
+        
+                <label for="message">Message:</label> <!-- Label for the message textarea -->
+                <textarea id="message" name="message" rows="4" required></textarea> <!-- Textarea for user message; required for form submission -->
+        
+                <button type="submit">Send Message</button> <!-- Submit button to send the form data -->
+            </form>
+        
+            <div class="social-media">
+                <!-- Container for social media links -->
+                <h2>Connect with us:</h2> <!-- Subheading for social media links -->
+                <a href="https://www.instagram.com/nanndemonaiiya/" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Link to Instagram profile -->
+                <a href="https://t.me/kampiitt" target="_blank"><i class="fab fa-telegram"></i></a> <!-- Link to Telegram profile -->
+                <a href="https://www.linkedin.com/in/zhalgas-seidazym-b05932298/" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- Link to LinkedIn profile -->
+            </div>
+        
+            <div class="map">
+                <!-- Container for the location map -->
+                <h2>Our Location:</h2> <!-- Subheading for the location map -->
+                <img src="../img/map.png" alt="Map showing our location" /> <!-- Image displaying the location map -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Copyright Zhalgas</p>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+.about {
+    width: 90%; /* Sets the width of the about section to 90% of its container */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks children elements vertically */
+    align-items: center; /* Centers child elements horizontally */
+    margin-bottom: 120px; /* Adds space below the section */
+    gap: 20px; /* Creates space between child elements */
+}
+
+.about .card {
+    width: 100%; /* Card takes the full width of the about section */
+    padding: 20px; /* Adds padding inside the card for spacing */
+    background-color: #e0e0e0; /* Sets a light gray background for the card */
+    border-radius: 20px; /* Rounds the corners of the card */
+}
+
+.about h2 {
+    /* Heading styles for section title */
+    font-family: 'Eczar', serif; /* Custom font for the heading */
+    font-weight: 600; /* Semi-bold weight for emphasis */
+    font-size: 50px; /* Sets the size of the heading */
+    line-height: 60px; /* Ensures spacing between lines if wrapped */
+}
+
+.about .about-text {
+    /* Styles for the paragraph text in the about section */
+    font-family: inherit; /* Inherits font family from parent */
+    font-size: 20px; /* Standard size for paragraph text */
+    font-weight: 500; /* Medium weight for good readability */
+    line-height: 25px; /* Ensures spacing between lines */
+}
+
+.about .skills {
+    display: flex; /* Uses flexbox to arrange skills horizontally */
+    justify-content: space-between; /* Distributes space evenly between columns */
+    padding: 15px; /* Adds padding for spacing within the skills section */
+    width: 100%; /* Full width of the parent container */
+}
+
+.about .skills-container {
+    /* Container for the skills columns */
+    display: flex; /* Allows for flexible layout */
+    width: 60%; /* Sets the width of the skills container */
+    justify-content: end; /* Aligns the skills to the right */
+    align-items: start; /* Aligns items to the start of the container */
+    gap: 20px; /* Space between skill columns */
+}
+
+.about .skills-column {
+    /* Individual skill column styles */
+    width: 20%; /* Sets the width of each skills column */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks items vertically in the column */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 15px; /* Adds padding around content */
+    border-radius: 25px; /* Rounds corners for visual appeal */
+    background-color: #e0e0e0; /* Sets a consistent background color */
+    gap: 15px; /* Space between elements in the column */
+}
+
+.about .skills-column h3 {
+    /* Heading for each skills column */
+    font-family: inherit; /* Inherits font properties from parent */
+    font-weight: inherit; /* Inherits font weight from parent */
+    line-height: 25px; /* Ensures good spacing */
+    font-size: 20px; /* Sets a size for the column title */
+}
+
+.about .skills .img-container {
+    /* Container for skill icons */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks icons vertically */
+    align-items: center; /* Centers icons horizontally */
+    justify-content: center; /* Centers icons vertically */
+    gap: 10px; /* Space between icons */
+}
+
+.about .skills-column img {
+    width: 80px; /* Sets a standard size for skill icons */
+}
+
+/* Media queries for responsive design adjustments */
+@media (max-width: 1550px) {
+    .about h2 {
+        font-size: 40px; /* Adjusts heading size for smaller screens */
+    }
+
+    .about .about-text, .about .skills-column h3 {
+        font-size: 18px; /* Makes text smaller for readability on smaller screens */
+    }
+
+    .about .skills-column img {
+        width: 60px; /* Resizes icons for better fit */
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        width: 70%; /* Narrows the about section on smaller screens */
+    }
+
+    .about h2 {
+        font-size: 30px; /* Reduces heading size for better fit */
+    }
+
+    .about .about-text, .about .skills-column h3 {
+        line-height: 20px; /* Adjusts line height for improved readability */
+        font-size: 15px; /* Makes text smaller for better fitting */
+    }
+
+    .about .skills {
+        width: 100%; /* Full width for skills section */
+        padding: 0px; /* Removes padding for tighter layout */
+        flex-direction: column; /* Stacks skills vertically */
+    }
+
+    .about .skills-container {
+        width: 100%; /* Takes full width of the parent */
+        flex-direction: column; /* Stacks skill columns vertically */
+        align-items: center; /* Centers columns */
+        justify-content: center; /* Centers columns */
+    }
+
+    .about .skills-column {
+        width: 100%; /* Makes columns full width for smaller devices */
+    }
+
+    .about .skills .img-container {
+        flex-direction: row; /* Aligns icons in a row */
+        align-items: center; /* Centers icons vertically */
+        justify-content: start; /* Aligns icons to the start */
+    }
+}
+
+@media (max-width: 500px) {
+    .about .skills-column img {
+        width: 40px; /* Resizes icons for smaller screens */
+    }
+}

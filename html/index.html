@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <!-- Header with navigation and mobile menu -->
+    <header>
+        
+        <!-- Mobile menu icon -->
+        <img src="../img/menu.svg" class="menu" alt="Menu icon" onclick="openClose()">
+        
+        <!-- Main navigation links -->
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <!-- Home (current page) -->
+                <li>
+                    <a class="selected-page" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="family.html">Family</a>
+                </li>
+                <li>
+                    <a href="education.html">Education</a>
+                </li>
+                <li>
+                    <a href="hobbies.html">Hobbies</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Main part for main content of body -->
+    <main>
+        <!-- Home section, introducing myself -->
+        <section class="home">
+            <div class="info">
+                <!-- Simple greeting button -->
+                <div class="btn">👋 Hello All</div>
+                
+                <!-- Main intro text -->
+                <h1 class="info-text">I'm Seidazym Zhalgas, A NodeJS Backend Developer</h1>
+                
+                <!-- Button linking to GitHub projects -->
+                <button class="btn" onclick="location.href='https://github.com/zhalgas-seidazym?tab=repositories';">
+                    View my work
+                    <img src="../img/arrow_white.svg" alt="">
+                </button>
+            </div>
+            
+            <!-- Profile photo on the right -->
+            <div class="img-container">
+                <img src="../img/profile_photo.png" alt="Profile photo">
+            </div>
+        </section>
+    
+        <!-- About section with biography and skills -->
+        <section class="about">
+            <div class="info-text card">
+                <!-- About heading and personal details -->
+                <h2>About</h2>
+                <p class="about-text">
+                    Hello, I’m Zhalgas, a 19-year-old freelancer from Taraz, born on January 7, 2005. I’m passionate about backend development and currently working on building my skills through various freelance projects. My goal is to become a professional backend developer, specializing in creating efficient and scalable systems. I’m constantly learning and looking forward to new challenges that will help me grow in this field.
+                </p>
+            </div>
+    
+            <!-- Skills section organized into columns that will become rows in mobile screens -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <!-- Frontend skills -->
+                    <div class="skills-column frontend">
+                        <h3>Frontend</h3>
+                        <div class="img-container">
+                            <img src="../img/html.svg" alt="HTML">
+                            <img src="../img/css.svg" alt="CSS">
+                            <img src="../img/javascript.svg" alt="JavaScript">
+                        </div>
+                    </div>
+                    <!-- Backend skills -->
+                    <div class="skills-column backend">
+                        <h3>Backend</h3>
+                        <div class="img-container">
+                            <img src="../img/nodejs.svg" alt="Node.js">
+                            <img src="../img/java.svg" alt="Java">
+                            <img src="../img/mongodb.png" alt="MongoDB">
+                            <img src="../img/postgre.png" alt="PostgreSQL">
+                        </div>
+                    </div>
+                    <!-- Other tools -->
+                    <div class="skills-column tools">
+                        <h3>Other Tools</h3>
+                        <div class="img-container">
+                            <img src="../img/docker.png" alt="Docker">
+                            <img src="../img/git.svg" alt="Git">
+                            <img src="../img/cisco.png" alt="Cisco">
+                            <img src="../img/linux.png" alt="Linux">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright Zhalgas</p>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>

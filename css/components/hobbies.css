@@ -1,0 +1,81 @@
+.hobbies {
+    /* Main container for the hobbies section */
+    background-color: #9a9a9a; /* Background color for the section */
+    color: black; /* Text color for the section */
+    padding: 5vw 2vw; /* Padding to create space within the section */
+    text-align: center; /* Center-aligns text within the section */
+    border-radius: 12px; /* Rounds the corners of the container */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Adds a shadow effect for depth */
+    width: 90%; /* Sets the width of the section */
+    margin-top: 50px; /* Top margin to create space from the element above */
+    margin-bottom: 120px; /* Bottom margin to create space from the element below */
+}
+
+.hobbies h2 {
+    /* Styles for the hobbies section heading */
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    margin-bottom: 2vw; /* Space below the heading */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    letter-spacing: 2px; /* Increases space between letters */
+    font-family: "Eczar", serif; /* Font family for the heading */
+    font-weight: 600; /* Font weight for the heading */
+}
+
+.hobbies p {
+    /* Styles for the description paragraph in the hobbies section */
+    font-size: 1.5vw; /* Responsive font size */
+    margin-bottom: 3vw; /* Space below the paragraph */
+    line-height: 1.5; /* Increases line height for readability */
+}
+
+.hobbies-grid {
+    /* Container for the grid layout of hobby items */
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
+    gap: 2vw; /* Space between grid items */
+    width: 100%; /* Full width of the container */
+}
+
+.hobby-item {
+    /* Individual hobby item styles */
+    background-color: #525252; /* Background color for each hobby item */
+    border-radius: 12px; /* Rounds the corners of hobby items */
+    padding: 2vw; /* Padding inside each hobby item */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects for hover */
+    overflow: hidden; /* Hides overflow content */
+    position: relative; /* Allows absolute positioning of child elements */
+}
+
+.hobby-item img {
+    /* Styles for images within hobby items */
+    width: 100%; /* Full width of the hobby item */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounds the corners of images */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.hobby-item h3 {
+    /* Styles for the hobby title */
+    font-size: 1.4vw; /* Responsive font size */
+    margin-top: 1.5vw; /* Space above the title */
+    color: white; /* Title text color */
+    font-weight: bold; /* Bold font weight for the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect for text for better visibility */
+}
+
+.hobby-item:hover {
+    /* Hover effects for hobby items */
+    transform: scale(1.05); /* Scales up the item slightly */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Increases shadow on hover for emphasis */
+}
+
+@media (max-width: 500px) {
+    /* Styles for smaller screens */
+    .hobbies p {
+        font-size: 3vw; /* Adjusts paragraph font size for better readability on small screens */
+    }
+
+    .hobby-item h3 {
+        font-size: 3vw; /* Adjusts hobby title font size for better visibility */
+    }
+}

@@ -1,0 +1,160 @@
+.education {
+    /* Container for the education section */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking children vertically */
+    align-items: center; /* Centering items horizontally */
+    justify-content: center; /* Centering items vertically */
+    width: 90%; /* Setting the width of the section */
+    margin-top: 80px; /* Space above the section */
+    margin-bottom: 120px; /* Space below the section */
+}
+
+.education h1 {
+    /* Main heading styles */
+    font-family: 'Eczar', serif; /* Font style */
+    font-weight: 600; /* Medium weight */
+    font-size: 60px; /* Font size */
+    line-height: 70px; /* Line height for spacing */
+    text-align: start; /* Aligning text to the left */
+    width: 100%; /* Full width */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.education-list {
+    /* Container for the list of educational experiences */
+    width: 100%; /* Full width */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking items vertically */
+    align-items: center; /* Centering items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+.education-list .list-item {
+    /* Individual education item styles */
+    width: 100%; /* Full width of the container */
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: start; /* Aligning items to the start */
+    background-color: #e0e0e0; /* Background color */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Hides overflow content */
+    position: relative; /* Positioning context for background */
+    background-repeat: no-repeat; /* Preventing background image repetition */
+    background-position: center; /* Centering background image */
+    background-size: cover; /* Covering the area with the image */
+    filter: grayscale(100%); /* Making the image grayscale */
+    color: white; /* Text color */
+    text-shadow: /* Adding a shadow effect to the text */
+        1px 1px 2px rgba(0, 0, 0, 0.7),
+        -1px -1px 2px rgba(0, 0, 0, 0.7),
+        1px -1px 2px rgba(0, 0, 0, 0.7),
+        -1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: .4s; /* Smooth transition for hover effect */
+}
+
+.education-list .list-item:hover {
+    /* Hover effect for the list item */
+    filter: grayscale(50%); /* Reducing grayscale effect on hover */
+}
+
+/* Background images for each educational milestone */
+.education .list-item:first-child {
+    background-image: url('../../img/school_29.jpeg'); /* Image for School No. 29 */
+}
+.education .list-item:nth-child(2) {
+    background-image: url('../../img/ktl.jpg'); /* Image for KTL */
+}
+.education .list-item:nth-child(3) {
+    background-image: url('../../img/sdu.jpg'); /* Image for SDU */
+}
+.education .list-item:last-child {
+    background-image: url('../../img/decode.jpg'); /* Image for Decode */
+}
+
+.education-list .list-item-text {
+    /* Text container for each list item */
+    width: 90%; /* Setting width */
+    padding: 20px; /* Padding around the text */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking text vertically */
+    gap: 10px; /* Space between text elements */
+}
+
+.education-list .place {
+    /* Style for the place name */
+    font-family: inherit; /* Inheriting font from parent */
+    font-weight: inherit; /* Inheriting weight from parent */
+    font-size: 30px; /* Font size */
+    line-height: 40px; /* Line height for spacing */
+}
+
+.education-list .duration, .education-list .description {
+    /* Style for duration and description */
+    font-family: inherit; /* Inheriting font from parent */
+    font-weight: 500; /* Medium weight */
+    font-size: 20px; /* Font size */
+    line-height: 25px; /* Line height for spacing */
+}
+
+.education-table {
+    /* Container for the education milestones table */
+    width: 100%; /* Full width */
+    background-color: #e0e0e0; /* Background color */
+    padding: 20px; /* Padding around the table */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Space around the table */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.education-table h2 {
+    /* Heading for the table */
+    text-align: center; /* Centering text */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size */
+}
+
+.education-table table {
+    /* Styles for the table */
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapsing borders */
+}
+
+.education-table th, td {
+    /* Styles for table header and cells */
+    padding: 15px; /* Padding for spacing */
+    text-align: left; /* Aligning text to the left */
+    border-bottom: 1px solid #ccc; /* Bottom border for rows */
+}
+
+.education-table th {
+    /* Styles for table header */
+    background-color: #4a4a4a; /* Header background color */
+    color: white; /* Header text color */
+    font-size: 18px; /* Font size */
+}
+
+.education-table tbody tr:hover {
+    /* Hover effect for table rows */
+    background-color: #d0d0d0; /* Background color on hover */
+}
+
+@media (max-width: 900px) {
+    /* Responsive styles for smaller screens */
+    .list-item-text .description {
+        font-size: 15px; /* Smaller font size */
+        line-height: 20px; /* Adjusted line height */
+    }
+
+    .education-table th, td {
+        font-size: 15px; /* Smaller font size for table */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .education-table h2 {
+        font-size: 20px; /* Smaller font size for table heading */
+    }
+
+    .education h1 {
+        font-size: 40px; /* Smaller font size for main heading */
+    }
+}

@@ -1,0 +1,21 @@
+footer {
+    position: absolute; /* Positions the footer absolutely at the bottom of its container */
+    bottom: 0px; /* Aligns the footer to the bottom of the page */
+    width: 100%; /* Ensures the footer takes the full width of the viewport */
+    height: 90px; /* Sets a fixed height for the footer */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally within the footer */
+    align-items: center; /* Centers content vertically within the footer */
+    background-color: black; /* Sets the background color to black for contrast */
+    color: white; /* Sets the text color to white for visibility */
+    font-family: inherit; /* Inherits font family from parent elements */
+    font-weight: inherit; /* Inherits font weight from parent elements */
+    font-size: 18px; /* Sets the font size for the footer text */
+}
+
+/* Media query for responsive design adjustments */
+@media (max-width: 900px) {
+    footer {
+        font-size: 15px; /* Decreases font size for better readability on smaller screens */
+    }
+}

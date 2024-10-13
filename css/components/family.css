@@ -1,0 +1,110 @@
+/* Family section styles */
+.family {
+    width: 90%; /* Sets the width of the family section to 90% of its parent container */
+    margin-top: 50px; /* Adds a top margin for spacing */
+    display: flex; /* Uses flexbox layout for the family section */
+    flex-direction: column; /* Aligns child elements vertically */
+    align-items: center; /* Centers child elements horizontally */
+    justify-content: center; /* Centers child elements vertically */
+    margin-bottom: 120px; /* Adds bottom margin for spacing */
+}
+
+/* Short info section styles */
+.family .short-info {
+    width: 100%; /* Takes the full width of the parent container */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space evenly between child elements */
+    align-items: center; /* Aligns child elements vertically in the center */
+    margin-bottom: 100px; /* Adds space below the short info section */
+}
+
+/* Text information styles */
+.family .info-text {
+    width: 60%; /* Sets the width of the text container */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns text elements vertically */
+    gap: 40px; /* Adds vertical space between text elements */
+}
+
+/* Main header styles */
+.family h1 {
+    font-family: 'Eczar', serif; /* Specifies font family */
+    font-weight: 600; /* Sets the font weight */
+    font-size: 60px; /* Sets the font size */
+    line-height: 70px; /* Controls the space between lines */
+}
+
+/* Text styles for paragraphs and member names */
+.family .info-text p, .family .member h4 {
+    font-family: inherit; /* Inherits the font family from the parent */
+    font-size: 20px; /* Sets the font size */
+    font-weight: 500; /* Sets the font weight */
+    line-height: 25px; /* Controls the space between lines */
+}
+
+/* Image container styles */
+.family .short-info .img-container {
+    width: 40%; /* Sets the width of the image container */
+}
+
+/* Image styles */
+.family .img-container img {
+    width: 100%; /* Makes the image responsive */
+}
+
+/* Family members section styles */
+.family .family-members {
+    width: auto; /* Allows the width to adjust based on content */
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows child elements to wrap onto multiple lines */
+    justify-content: start; /* Aligns items to the start */
+    gap: 30px; /* Adds space between family member cards */
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+/* Individual family member styles */
+.family .member {
+    flex: 1; /* Allows the member elements to grow equally */
+    padding: 15px; /* Adds padding inside the member cards */
+    background-color: #e0e0e0; /* Sets a light grey background color */
+    min-width: 200px; /* Sets a minimum width for member cards */
+    max-width: 400px; /* Sets a maximum width for member cards */
+    width: 20%; /* Sets the width of each member card */
+    border-radius: 50px; /* Rounds the corners of the member cards */
+    display: flex; /* Uses flexbox layout for member content */
+    flex-direction: column; /* Aligns content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Image styles for family member photos */
+.family .member img {
+    width: 100%; /* Makes the member images responsive */
+    margin-bottom: 15px; /* Adds space below the images */
+}
+
+/* Text alignment for member names */
+.family .member h4 {
+    text-align: center; /* Centers member names below their images */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 900px) {
+    /* Adjusts layout for smaller screens */
+    .family .short-info {
+        flex-direction: column; /* Stacks elements vertically */
+    }
+
+    .family .short-info .img-container {
+        width: 80%; /* Increases width of the image container for smaller screens */
+    }
+
+    .family .short-info .info-text {
+        width: 90%; /* Increases width of the text container for smaller screens */
+    }
+
+    /* Adjusts font size and line height for better readability on smaller screens */
+    .family .info-text p, .family .member h4 {
+        font-size: 15px; /* Reduces font size */
+        line-height: 20px; /* Reduces line height */
+    }
+}
