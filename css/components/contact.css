@@ -1,110 +1,116 @@
+/* contact block size spacings color */
 .contact {
-    width: 75%; /* Sets the width of the contact section to 75% of its parent container */
-    margin: 50px 0 120px; /* Applies margin above and below the section for spacing */
-    padding: 20px; /* Adds padding inside the section for better spacing of content */
-    background-color: #525252; /* Sets a dark gray background color for the contact section */
-    color: #ffffff; /* Sets the text color to white for better contrast */
-    border-radius: 8px; /* Rounds the corners of the section */
+    width: 75%;
+    margin: 50px 0 120px;
+    padding: 20px;
+    background-color: #525252;
+    color: #ffffff;
+    border-radius: 8px;
 }
 
+/* style of headings */
 .contact h1,
 .contact h2 {
-    text-align: center; /* Centers the headings */
-    margin-bottom: 20px; /* Adds space below the headings */
-    font-family: "Eczar", serif; /* Sets the font family for headings */
-    font-size: 25px; /* Sets the font size for headings */
-    line-height: 30px; /* Sets the line height for better readability */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Eczar", serif;
+    font-size: 25px;
+    line-height: 30px;
 }
-
+/* inputs and btn will vertcially */
 .contact form {
-    display: flex; /* Uses flexbox for layout */
-    flex-direction: column; /* Stacks form elements vertically */
+    display: flex;
+    flex-direction: column;
 }
-
+/* labels style */
 .contact label {
-    margin-bottom: 5px; /* Adds space below the label */
-    font-weight: bold; /* Makes the label text bold */
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
+/* inputs style */
 .contact input,
 .contact textarea {
-    padding: 20px; /* Adds padding inside input and textarea for better user experience */
-    margin-bottom: 15px; /* Adds space below each input/textarea */
-    border: none; /* Removes the default border */
-    border-radius: 4px; /* Rounds the corners of inputs and textareas */
+    padding: 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
 }
 
 .contact input {
-    background-color: #9a9a9a; /* Sets a lighter gray background color for input fields */
-    color: #ffffff; /* Sets the text color to white */
+    background-color: #9a9a9a;
+    color: #ffffff;
 }
 
 .contact textarea {
-    background-color: #9a9a9a; /* Sets a lighter gray background color for the textarea */
-    color: #ffffff; /* Sets the text color to white */
+    background-color: #9a9a9a;
+    color: #ffffff;
 }
 
+/* btn style and hover */
 .contact button {
-    padding: 20px; /* Adds padding inside the button for better usability */
-    background-color: #303030; /* Sets a dark background color for the button */
-    color: #ffffff; /* Sets the button text color to white */
-    border: none; /* Removes the default border */
-    border-radius: 4px; /* Rounds the corners of the button */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: .4s; /* Adds a transition effect for hover states */
+    padding: 20px;
+    background-color: #303030;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
 }
 
 .contact button:hover {
-    background-color: #242424; /* Changes button background color on hover for a visual effect */
+    background-color: #242424;
 }
-
+/* connect part */
 .contact .social-media {
-    text-align: center; /* Centers the social media section */
-    margin: 20px 0; /* Adds vertical spacing around the social media links */
+    text-align: center;
+    margin: 20px 0;
 }
 
+/* icons style and their hover */
 .contact .social-media a {
-    margin: 0 10px; /* Adds horizontal spacing between social media icons */
-    color: #ffffff; /* Sets the icon color to white */
-    font-size: 24px; /* Sets the font size for social media icons */
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
 }
 
 .contact .social-media a:hover {
-    color: #aaa; /* Changes the icon color on hover for better interactivity */
+    color: #aaa;
 }
 
+/* map part */
 .contact .map {
-    text-align: center; /* Centers the map section */
-    width: 100%; /* Sets the width of the map section to 100% of its container */
+    text-align: center;
+    width: 100%;
 }
-
+/* map image */
 .contact .map img {
-    width: 100%; /* Makes the map image responsive by setting its width to 100% */
-    border-radius: 8px; /* Rounds the corners of the map image */
+    width: 100%;
+    border-radius: 8px;
 }
 
-/* Media query for screen widths up to 1000px */
-@media (max-width: 1000px){
+/* change spacings */
+@media (max-width: 1000px) {
     .contact input, .contact textarea {
-        padding: 10px; /* Reduces padding for smaller screens for a better fit */
+        padding: 10px;
     }
     .contact button {
-        padding: 10px; /* Reduces button padding for smaller screens */
+        padding: 10px;
     }
 }
 
-/* Media query for screen widths up to 768px */
+/* change spacings and size */
 @media (max-width: 768px) {
     .contact {
-        padding: 10px; /* Reduces padding for the contact section on smaller screens */
+        padding: 10px;
     }
 
     .contact h2, .contact h3 {
-        font-size: 20px; /* Reduces font size for subheadings on smaller screens */
-        line-height: 25px; /* Adjusts line height for better readability on smaller screens */
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .contact button {
-        font-size: 15px; /* Reduces font size of the button for smaller screens */
+        font-size: 15px;
     }
 }

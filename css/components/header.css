@@ -1,138 +1,136 @@
-/* Header container styling - centers the content horizontally and adds margin on top */
+/* will centralize nav */
 header {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
 
-/* Navigation bar wrapper - takes up 80% width and centers its content */
+/* will take width and centralize ul */
 .header-nav {
     width: 80%;
     display: flex;
     justify-content: center;
 }
 
-/* Unordered list inside the navigation - aligns items horizontally with equal spacing */
+/* ul will put elements horizontal */
 .header-ul {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35px; /* Space between each menu item */
+    gap: 35px;
     padding: 32px;
-    background-color: #e0e0e0; /* Light grey background for the nav */
-    border-radius: 50px; /* Rounded corners for the nav container */
+    background-color: #e0e0e0;
+    border-radius: 50px;
 }
 
-/* Styling for the anchor tags inside the navigation bar */
+/* link style and hover and when active */
 .header-ul a {
-    font-family: inherit; /* Inherits the font-family from the parent */
-    color: inherit; /* Inherits text color from the parent */
-    font-weight: inherit; /* Inherits font weight from parent */
-    text-decoration: none; /* Removes default underline from links */
-    line-height: 25px; /* Adds vertical space inside the links */
-    font-size: 20px; /* Base font size for menu items */
-    transition: .3s; /* Smooth transition for hover effects */
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 20px;
+    transition: .3s;
 }
 
-/* Hover effect for links - increases size and changes color with a shadow */
 .header-ul a:hover {
-    font-size: 21px; /* Slightly larger on hover */
-    color: #505050; /* Changes text color to a darker shade */
+    font-size: 21px;
+    color: #505050;
     box-shadow: 
     0 0 10px rgba(0, 0, 0, 0.5),
     0 0 20px rgba(0, 0, 0, 0.4),
     0 0 30px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.2); /* Adds multiple layers of subtle shadow for a glowing effect */
-    
-    border-radius: 15px; /* Rounds the edges on hover */
-    padding: 5px; /* Adds a bit of padding on hover */
+    0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 5px;
 }
 
-/* Active link styling - underlines the selected page */
 .header-ul a:active {
     text-decoration: underline;
 }
 
-/* Styling for the currently selected page - always underlined */
+/* current page style */
 .selected-page {
     text-decoration: underline !important;
 }
-
-/* Menu icon - hidden on larger screens */
+/* burger menu will apper when screen size will small */
 .menu {
     display: none;
     width: 40px;
     height: 40px;
 }
 
-/* Media query for screens smaller than 900px */
+/* change size and spacing */
 @media (max-width: 900px) {
     .header-nav {
-        width: 70%; /* Reduces the width of the navigation */
+        width: 70%;
     }
 
     .header-ul {
-        padding: 15px; /* Reduces padding around the navigation */
-        gap: 15px; /* Closer spacing between menu items */
+        padding: 15px;
+        gap: 15px;
     }
 
     .header-ul a {
-        font-size: 15px; /* Smaller font size for smaller screens */
+        font-size: 15px;
     }
 
     .header-ul a:hover {
-        font-size: 16px; /* Hover effect also scales down */
+        font-size: 16px;
     }
 }
-
-/* Media query for screens smaller than 600px */
+/* here also */
 @media (max-width: 600px) {
     .header-nav {
-        width: 75%; /* Slightly larger width on mobile */
+        width: 75%;
     }
 
     .header-ul {
-        padding: 15px; /* Keeps padding smaller on mobile */
+        padding: 15px;
     }
 }
 
-/* Media query for screens smaller than 500px - for mobile view */
 @media (max-width: 500px) {
     header {
-        padding-left: 9%; /* Adds some padding on the left for alignment */
-        justify-content: start; /* Aligns header to the left */
+        padding-left: 9%;
+        justify-content: start;
     }
-
+    
+    /* burger menu will appear */
     .menu {
-        display: block; /* Shows the menu icon on small screens */
+        display: block;
     }
 
+    /* nav will display none */
     .header-nav {
-        display: none; /* Hides the full navigation until the menu is opened */
+        display: none;
     }
 
+    /* ul style when burger menu appears so that links will in vertical */
     .header-ul {
         margin: 0px;
         padding: 0px;
         display: flex;
-        flex-direction: column; /* Stacks the menu items vertically */
+        flex-direction: column;
         align-items: start;
         border: none;
-        background-color: white; /* White background for the dropdown menu */
-        gap: 0px; /* Removes gap between items */
-        border-radius: 0px; /* Removes border-radius */
+        background-color: white;
+        gap: 0px;
+        border-radius: 0px;
     }
 
+    /* puts nav in below of burger menu */
     .open {
         position: absolute;
         display: block;
-        width: 100%; /* Full width for the opened menu */
-        top: 35px; /* Positioned below the header */
+        width: 100%;
+        top: 35px;
         z-index: 10;
     }
 
     .open a {
-        padding: 5px; /* Adds padding to the individual menu items */
+        padding: 5px;
     }
 }

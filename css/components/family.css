@@ -1,110 +1,104 @@
-/* Family section styles */
+/* there two part short info and family members part will stand vertically */
 .family {
-    width: 90%; /* Sets the width of the family section to 90% of its parent container */
-    margin-top: 50px; /* Adds a top margin for spacing */
-    display: flex; /* Uses flexbox layout for the family section */
-    flex-direction: column; /* Aligns child elements vertically */
-    align-items: center; /* Centers child elements horizontally */
-    justify-content: center; /* Centers child elements vertically */
-    margin-bottom: 120px; /* Adds bottom margin for spacing */
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
 }
 
-/* Short info section styles */
+/* short info with image will stand horizontally */
 .family .short-info {
-    width: 100%; /* Takes the full width of the parent container */
-    display: flex; /* Uses flexbox for layout */
-    justify-content: space-between; /* Distributes space evenly between child elements */
-    align-items: center; /* Aligns child elements vertically in the center */
-    margin-bottom: 100px; /* Adds space below the short info section */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-/* Text information styles */
+/* there short info text part will be stand in column */
 .family .info-text {
-    width: 60%; /* Sets the width of the text container */
-    display: flex; /* Uses flexbox layout */
-    flex-direction: column; /* Aligns text elements vertically */
-    gap: 40px; /* Adds vertical space between text elements */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-/* Main header styles */
 .family h1 {
-    font-family: 'Eczar', serif; /* Specifies font family */
-    font-weight: 600; /* Sets the font weight */
-    font-size: 60px; /* Sets the font size */
-    line-height: 70px; /* Controls the space between lines */
+    font-family: 'Eczar', serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
 }
 
-/* Text styles for paragraphs and member names */
 .family .info-text p, .family .member h4 {
-    font-family: inherit; /* Inherits the font family from the parent */
-    font-size: 20px; /* Sets the font size */
-    font-weight: 500; /* Sets the font weight */
-    line-height: 25px; /* Controls the space between lines */
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
 }
 
-/* Image container styles */
+/* image container width from short info */
 .family .short-info .img-container {
-    width: 40%; /* Sets the width of the image container */
+    width: 40%;
 }
 
-/* Image styles */
 .family .img-container img {
-    width: 100%; /* Makes the image responsive */
+    width: 100%;
 }
 
-/* Family members section styles */
+/* family members will stand horizontally and if not fit in will be in below */
 .family .family-members {
-    width: auto; /* Allows the width to adjust based on content */
-    display: flex; /* Uses flexbox for layout */
-    flex-wrap: wrap; /* Allows child elements to wrap onto multiple lines */
-    justify-content: start; /* Aligns items to the start */
-    gap: 30px; /* Adds space between family member cards */
-    align-items: center; /* Aligns items vertically in the center */
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
 }
 
-/* Individual family member styles */
+/* this is for every member, elements here will stand vertically and here width in flex and maxmin */
 .family .member {
-    flex: 1; /* Allows the member elements to grow equally */
-    padding: 15px; /* Adds padding inside the member cards */
-    background-color: #e0e0e0; /* Sets a light grey background color */
-    min-width: 200px; /* Sets a minimum width for member cards */
-    max-width: 400px; /* Sets a maximum width for member cards */
-    width: 20%; /* Sets the width of each member card */
-    border-radius: 50px; /* Rounds the corners of the member cards */
-    display: flex; /* Uses flexbox layout for member content */
-    flex-direction: column; /* Aligns content vertically */
-    align-items: center; /* Centers content horizontally */
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    min-width: 200px;
+    max-width: 400px;
+    width: 20%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Image styles for family member photos */
+/* member image */
 .family .member img {
-    width: 100%; /* Makes the member images responsive */
-    margin-bottom: 15px; /* Adds space below the images */
+    width: 100%;
+    margin-bottom: 15px;
 }
-
-/* Text alignment for member names */
+/* member text */
 .family .member h4 {
-    text-align: center; /* Centers member names below their images */
+    text-align: center;
 }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 900px) {
-    /* Adjusts layout for smaller screens */
+    /* there short info with image will vertically and there is their sizes */
     .family .short-info {
-        flex-direction: column; /* Stacks elements vertically */
+        flex-direction: column;
     }
 
     .family .short-info .img-container {
-        width: 80%; /* Increases width of the image container for smaller screens */
+        width: 80%;
     }
 
     .family .short-info .info-text {
-        width: 90%; /* Increases width of the text container for smaller screens */
+        width: 90%;
     }
 
-    /* Adjusts font size and line height for better readability on smaller screens */
     .family .info-text p, .family .member h4 {
-        font-size: 15px; /* Reduces font size */
-        line-height: 20px; /* Reduces line height */
+        font-size: 15px;
+        line-height: 20px;
     }
 }
